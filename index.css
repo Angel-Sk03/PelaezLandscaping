@@ -1,0 +1,142 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    background-image: url('work4.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay with slight transparency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Section Styles */
+main section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+#services {
+    background-color: #e0f7fa;
+}
+
+#about {
+    background-color: #e8f5e9;
+}
+
+#contact {
+    background-color: #fff3e0;
+}
+
+/* Mobile responsiveness using media queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Reduce the font size on tablets and small laptops */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-position: center top; /* Adjust image position for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Further reduce the font size for mobile phones */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .overlay {
+        padding: 20px; /* Add padding so text doesn't touch screen edges */
+    }
+
+    main section {
+        padding: 40px 15px;
+    }
+}
