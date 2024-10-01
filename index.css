@@ -103,7 +103,7 @@ main section {
 
 /* Logo Image Styling */
 .logo-image {
-    width: 300px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     height: auto;
     margin-top: 10px; /* Adds a bit of space between the text and the logo */
 }
