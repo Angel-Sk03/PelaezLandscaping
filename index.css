@@ -103,9 +103,12 @@ main section {
 
 /* Logo Image Styling */
 .logo-image {
-    width: 100px; /* Adjust size as needed */
+    width: 100px; /* Reduced size */
     height: auto;
-    margin-top: 5px; /* Adds a bit of space between the text and the logo */
+    margin-top: 10px; /* Space between the heading and logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the logo */
 }
 
 /* Mobile responsiveness using media queries */
@@ -127,6 +130,11 @@ main section {
 
     nav ul li {
         margin: 0 10px; /* Adjust margin for mobile display */
+    }
+
+    /* Ensure the logo is smaller on mobile */
+    .logo-image {
+        width: 80px; /* Smaller logo for mobile */
     }
 }
 
@@ -151,7 +159,7 @@ main section {
         padding: 40px 15px;
     }
 
-    /* Ensure the navigation remains horizontal */
+    /* Keep the navigation horizontal and adjust the logo size */
     nav ul {
         flex-direction: row; /* Ensure horizontal layout */
         justify-content: center; /* Center the navigation links */
@@ -163,7 +171,7 @@ main section {
 
     /* Adjust the logo size for smaller screens */
     .logo-image {
-        width: 120px; /* Adjust logo size on smaller screens */
+        width: 70px; /* Further reduce the logo size on small screens */
         margin-top: 5px; /* Adjust spacing for smaller screens */
     }
 }
