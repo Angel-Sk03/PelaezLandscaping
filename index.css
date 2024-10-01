@@ -99,6 +99,15 @@ main section {
     background-color: #fff3e0;
 }
 
+/* Existing styles omitted for brevity */
+
+/* Logo Image Styling */
+.logo-image {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 10px; /* Adds a bit of space between the text and the logo */
+}
+
 /* Mobile responsiveness using media queries */
 @media (max-width: 768px) {
     h1 {
@@ -109,13 +118,15 @@ main section {
         font-size: 1.5rem;
     }
 
+    /* Keep the nav bar horizontal on mobile devices */
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: center; /* Center the navigation links */
         background-color: rgba(0, 0, 0, 0.9);
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0 10px; /* Adjust margin for mobile display */
     }
 }
 
@@ -138,5 +149,21 @@ main section {
 
     main section {
         padding: 40px 15px;
+    }
+
+    /* Ensure the navigation remains horizontal */
+    nav ul {
+        flex-direction: row; /* Ensure horizontal layout */
+        justify-content: center; /* Center the navigation links */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduce margin for a more compact appearance */
+    }
+
+    /* Adjust the logo size for smaller screens */
+    .logo-image {
+        width: 120px; /* Adjust logo size on smaller screens */
+        margin-top: 5px; /* Adjust spacing for smaller screens */
     }
 }
