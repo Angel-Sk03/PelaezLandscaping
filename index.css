@@ -103,7 +103,7 @@ main section {
 
 /* Logo Image Styling */
 .logo-image {
-    width: 100px; /* Reduced size */
+    width: 200px; /* Reduced size */
     height: auto;
     margin-top: 10px; /* Space between the heading and logo */
     display: block;
